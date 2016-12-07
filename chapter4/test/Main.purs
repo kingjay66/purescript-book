@@ -7,6 +7,10 @@ import Control.Monad.Eff.Console (CONSOLE, logShow)
 import Data.Path (root)
 import Data.Foldable (for_)
 import FileOperations (allFiles)
+import Exercises (squares)
 
 main :: Eff (console :: CONSOLE) Unit
-main = for_ (allFiles root) logShow
+main =
+  logShow squares [1.0, 2.0]
+  for_ (allFiles root) logShow
+
