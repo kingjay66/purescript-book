@@ -1,0 +1,26 @@
+{
+  "name": "chapter4",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "directories": {
+    "test": "test"
+  },
+  "dependencies": {},
+  "devDependencies": {
+    "pscid": "^1.12.0",
+    "pulp": "^10.0.0",
+    "purescript": "^0.10.2",
+    "purescript-psa": "^0.4.0"
+  },
+  "scripts": {
+    "build": "pulp build",
+    "build:babel": "babel src -s -d lib",
+    "dev": "pscid --test --port 1701",
+    "test": "pulp test"
+  },
+  "author": "",
+  "license": "ISC",
+
+  "postinstall": "bower install"
+}
