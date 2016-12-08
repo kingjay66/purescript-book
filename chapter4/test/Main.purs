@@ -38,6 +38,10 @@ main = runTest do
       test "[-1.0]" do
         equal (noNegs [-1.0]) []
 
+-- instead of 'forall' you can use ∀
+-- e.g. ∀ a b. a -> b -> a
+
+
 -- import Data.Path (root)
 -- import Data.Foldable (for_)
 -- import FileOperations (allFiles)
